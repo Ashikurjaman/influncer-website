@@ -1,0 +1,301 @@
+/*                google fonts                   */
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Ubuntu:wght@500;700&display=swap');
+
+        body{
+            font-family: 'Abyssinica SIL', serif;
+
+            font-family: 'Ubuntu', sans-serif;
+            color: #34495e;
+
+        }
+
+
+        /*                google fonts                   */
+
+        .container{
+            
+            
+        }
+
+        /* header */
+
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+
+        /* navbar */
+
+        nav ul{
+            display: flex;
+            margin-right: 120px;
+        }
+
+        nav ul li{
+            list-style: none;
+            
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            margin-left: 20px;
+            color: #34495e;
+
+        }
+
+        .fa-bars{
+            display: none;
+        }
+        /* hero section  */
+
+        .hero-section{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            width: 80%;
+            margin-left: 100px;
+
+        }
+        .hero-content{
+           margin-top: 50px;
+            
+        }
+
+        .hero-content h2{
+            font-size: 40px;
+        }
+        .hero-image{
+            
+        }
+
+        .hero-image img{
+            
+            
+        }
+        /* From uiverse.io by @adamgiebl */
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(2.5em) rotate(45deg) scale(1.2);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(1);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.2em);
+    }
+   
+    to {
+     transform: translateY(0.3em);
+    }
+   }
+   .shopping-site{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /* flex-wrap: wrap; */
+    border-bottom: 1px solid #34495e;
+    border-top:1px solid #34495e;
+    
+   }
+   .sites{
+    
+    width: 800px;
+    
+   }
+
+   .sites-img{
+    display: flex;
+    
+
+   }
+   .sites-img img{
+    width: 100%;
+    height: 100px;
+   }
+   
+   .popular-collection{
+    margin-top: 100px;
+   }
+   .collection-title{
+    text-align: center;
+    font-size: 24px;
+    
+   }
+
+   .collections-products{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   }
+
+   .products{
+    
+   }
+
+   .product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap:20px
+   }
+
+
+   .collection{
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.029),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.036),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.043),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+    
+   }
+
+   .collection img{
+        /* width: 40%; */
+        border-radius: 5ps;
+}
+
+.arrow{
+    text-align: end;
+    
+    color: #34495e;
+}
+
+.feathers{
+    display: flex;
+    justify-content: center;
+}
+
+
+.feather{
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-top: 50px;
+    
+}
+
+.feather-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    
+
+}
+
+.feather-products div{
+    
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;
+    height: 200px;
+    margin-top: 100px;
+}
+.footer{
+    
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.footer p i{
+    margin-left: 10px;
+}
+
+/* ----------------------Responsive -------------- */
+
+
+
+@media screen and (max-width:688px) {
+    .container{
+        max-width: 688px;
+        margin: 0;
+    }
+.logo h1{
+    text-align: center;
+}
+
+    nav ul li{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+
+    .hero-section, .sites-img{
+        flex-direction: column;
+    }
+    .sites-img img{
+        width: 100%;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .product, .feather-products{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feathers{
+        padding: 20px;
+        width: 100%;
+    }
+    .feather-products img {
+        width: 100%;
+    }
+
+     
+}
